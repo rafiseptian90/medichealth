@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+.container{
+    padding: 20px 80px;
+    position:relative;
+}
+
+nav#navbar{
+    display:block;
+}
+
+#navbar .brand h1{
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: var(--primaryColor);
+    text-align:center;
+}
+
+h1.header-title{
+    font-size:35px;
+    line-height: 45px;
+}
+
+#header .content{
+    display:flex;
+    flex-flow:row wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.left-content{
+    flex:100%;
+    text-align: center;
+    order:1;
+}
+
+.right-content{
+    flex:100%;
+    order:0;
+    margin-bottom: 35px;
+}
+
+#tracking .content{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#fund_raising #slider{
+    width: 80%;
+    height: 75vh;
+}
+
+.slide-item .caption h1{
+    font-size:35px;
+}
+
+a.btn-donate{
+    bottom:6%;
+}

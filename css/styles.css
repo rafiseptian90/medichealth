@@ -1,0 +1,301 @@
+@import url("./fonts.css");
+
+:root{
+    --primaryColor: #536dfe;
+    --secondaryColor: #13293D;
+    --accentColor: #f2f2f2;
+    --bodyFont: 18px;
+    --headerFont: 28px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size: var(--bodyFont);
+    font-family: "Roboto";
+    color: var(--secondaryColor);
+}
+
+.container{
+    padding: 25px 120px;
+    position:relative;
+}
+
+nav#navbar{
+    padding:25px 120px;
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    align-items:center;
+}
+
+#navbar .brand h1{
+    font-size: 32px;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+
+ul.navbar-ul{
+    list-style-type:none;
+    justify-self: end;
+}
+
+li.nav-item{
+    float:left;
+    margin-right: 25px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+a.nav-link{
+    text-decoration:none !important;
+    color: var(--secondaryColor) !important;
+}
+
+#header{
+    width:100%;
+    background-color: var(--accentColor);
+}
+
+#header .content{
+    padding:30px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    flex:48%;
+}
+
+h1.header-title{
+    color:var(--secondaryColor);
+    font-size: 48px;
+    line-height: 65px;
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+form{
+    position:relative;
+    margin-top: 25px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+input#messages{
+    width: 320px;
+    height: 38px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    padding:10px;
+    border:none;
+    outline:none;
+    font-size: 14px;
+    color: var(--secondaryColor);
+}
+
+#btn-send{
+    outline:none;
+    border:none;
+    background-color: var(--primaryColor);
+    padding:7px 14px;
+    border-radius: 12px;
+    color: #fff;
+    font-size:18px;
+    font-weight:500;
+    cursor:pointer;
+    transition: all .5s;
+}
+
+#btn-send:hover{
+    background-color: #3d56b9;
+}
+
+.right-content{
+    flex:50%;
+}
+
+.right-content img{
+    width:100%;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom: 35px;
+}
+
+.section-header h3{
+    font-size: var(--headerFont);
+    font-weight:bold;
+    margin-top: 10px;
+    font-family: "Poppins";
+}
+
+#tracking .content{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.card{
+    padding: 18px;
+    border-radius: 12px;
+    border: 3px solid rgba(0, 0, 0, .4);
+    width:180px;
+    text-align:center;
+    transition:all 1s;
+}
+
+.card:hover{
+    background-color: var(--primaryColor);
+    cursor:pointer;
+}
+
+.card:hover h5, .card:hover h3{
+    color: #fff !important;
+}
+
+.card h5{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card h3{
+    font-size: var(--headerFont);
+    color: var(--primaryColor);
+    font-weight:bold;
+    font-family: "Poppins";
+}
+
+.world-map img {
+    width: 100%;
+    height: 320px;
+}
+
+#fund_raising{
+    background-color: var(--accentColor);
+}
+
+#fund_raising #slider {
+    width: 60%;
+    margin: auto;
+    height: 75vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.slider-container{
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: all .6s;
+}
+
+.slide-item{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.slide-item img.image-slider{
+    width:100%;
+    height:100%;
+    position:absolute;
+    filter:brightness(.3);
+    z-index:-1;
+}
+
+.slide-item .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+    color:#fff;
+}
+
+.slide-item .caption h1{
+    font-family: "Poppins";
+    font-size: 42px;
+    text-align:center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .4);
+}
+
+.dots{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dots div{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: var(--accentColor);
+    cursor:pointer;
+    transition: all .6s;
+}
+
+.dots div.active{
+    background-color: var(--primaryColor);
+}
+
+a.btn-donate{
+    padding: 8px 14px;
+    background-color: var(--accentColor);
+    color: var(--secondaryColor);
+    text-decoration:none;
+    border-radius: 12px;
+    font-weight:bold;
+    position:absolute;
+    left:50%;
+    bottom:12%;
+    transform:translateX(-50%);
+    letter-spacing: 2px;
+    transition:all .5s;
+}
+
+a.btn-donate:hover{
+    background-color: #acacac;
+}
+
+footer{
+    background-color: var(--primaryColor);
+    color: var(--accentColor);
+}
+
+footer .container{
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    align-items:center;
+}
+
+footer .share{
+    justify-self: end;
+    display:flex;
+}
+
+.share a{
+    font-size: var(--headerFont);
+    margin-right: 28px;
+    text-decoration:none;
+    color:var(--accentColor);
+}
